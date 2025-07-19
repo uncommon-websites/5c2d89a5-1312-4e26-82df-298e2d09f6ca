@@ -35,136 +35,140 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Milestone-based pricing for startup success",
+		subtitle = "Build investor-ready products with VC-aligned strategy and design validation",
+		tierNames = ["MVP Validation", "Product-Market Fit", "Scale & Growth"],
 		features = [
 			{
-				name: "Projects",
+				name: "User research & validation",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					"MVP Validation": "Basic interviews",
+					"Product-Market Fit": "In-depth research",
+					"Scale & Growth": "Advanced research"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Strategic design framework",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					"MVP Validation": "Core framework",
+					"Product-Market Fit": "Full framework",
+					"Scale & Growth": "Enterprise framework"
 				}
 			},
 			{
-				name: "Storage",
+				name: "Investor-ready prototypes",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					"MVP Validation": "Low-fidelity",
+					"Product-Market Fit": "High-fidelity",
+					"Scale & Growth": "Production-ready"
 				}
 			},
 			{
-				name: "API access",
+				name: "Market validation testing",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					"MVP Validation": true,
+					"Product-Market Fit": true,
+					"Scale & Growth": true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "VC pitch deck design",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					"MVP Validation": false,
+					"Product-Market Fit": true,
+					"Scale & Growth": true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Business model validation",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					"MVP Validation": "Basic",
+					"Product-Market Fit": "Advanced",
+					"Scale & Growth": "Full strategy"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Weekly strategy sessions",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					"MVP Validation": "Bi-weekly",
+					"Product-Market Fit": "Weekly",
+					"Scale & Growth": "2x weekly"
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Founder coaching",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
+					"MVP Validation": false,
+					"Product-Market Fit": "Basic",
+					"Scale & Growth": "Advanced"
 				}
 			},
 			{
-				name: "SLA",
+				name: "Post-launch support",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					"MVP Validation": "30 days",
+					"Product-Market Fit": "90 days",
+					"Scale & Growth": "6 months"
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "MVP Validation",
+				monthlyPrice: 5000,
+				yearlyPrice: null,
+				description: "Validate your idea before you build. Perfect for pre-seed founders who need strategic direction.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Market research & user validation",
+					"Core product strategy framework", 
+					"Low-fidelity wireframes & prototypes",
+					"Business model validation",
+					"Bi-weekly strategy sessions",
+					"30 days post-launch support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start validation",
+					href: "/contact?plan=mvp"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Product-Market Fit",
+				monthlyPrice: 12000,
+				yearlyPrice: null,
+				description: "Build investor-ready products with proven market traction for funding rounds.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"In-depth user research & testing",
+					"Full strategic design framework",
+					"High-fidelity prototypes & designs",
+					"VC pitch deck design & strategy",
+					"Weekly founder strategy sessions",
+					"Basic founder coaching",
+					"90 days post-launch support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Get funded",
+					href: "/contact?plan=pmf"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
+				name: "Scale & Growth",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "Scale your validated product to 50+ funded portfolio companies with enterprise strategy.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Advanced market research & analytics",
+					"Enterprise-grade design system",
+					"Production-ready development handoff",
+					"Full growth strategy & roadmap",
+					"2x weekly strategic sessions",
+					"Advanced founder & team coaching",
+					"6 months ongoing support",
+					"Portfolio company network access"
 				],
 				cta: {
-					label: "Contact sales",
-					href: "/contact"
+					label: "Scale together",
+					href: "/contact?plan=scale"
 				}
 			}
 		]
@@ -178,29 +182,15 @@ Please update features according to the company's product offering. Do not remov
 	} = $props();
 
 	// State
-	let annual = $state(true);
+	let annual = $state(false); // Project-based pricing, not subscription
 </script>
 
 <section class="section-py section-px container mx-auto">
-	<div class="flex flex-col items-baseline justify-between lg:flex-row">
+	<div class="flex flex-col items-center justify-center text-center mb-12">
 		<SectionHeader {title} {subtitle} />
-
-		<div class="mb-8 flex justify-center">
-			<div class="inline-flex items-center rounded-full bg-gray-200 p-0.5 gap-0.5">
-				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
-					onclick={() => (annual = false)}
-				>
-					Monthly
-				</button>
-				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
-					onclick={() => (annual = true)}
-				>
-					Annual <span class="text-xs ml-1 text-gray-500">Save 20%</span>
-				</button>
-			</div>
-		</div>
+		<p class="text-body text-emphasis-medium mt-4 max-w-3xl">
+			Milestone-based pricing means you only pay when we hit key validation checkpoints. No monthly subscriptions, no hidden fees. Pay for results, not retainers.
+		</p>
 	</div>
 
 	<div class="bb grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -225,8 +215,8 @@ Please update features according to the company's product offering. Do not remov
 									currency: "USD",
 									trailingZeroDisplay: "stripIfInteger"
 								}}
-								value={annual ? tier.yearlyPrice : tier.monthlyPrice}
-								suffix="/month"
+								value={tier.monthlyPrice}
+								suffix=" project"
 							/>
 						{/if}
 					</div>

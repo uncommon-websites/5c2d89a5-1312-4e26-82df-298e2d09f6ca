@@ -14,6 +14,8 @@
 	import IconUsers from "~icons/lucide/users";
 	import IconHeart from "~icons/lucide/heart";
 	import IconGlobe from "~icons/lucide/globe";
+	import IconTarget from "~icons/lucide/target";
+	import IconRocket from "~icons/lucide/rocket";
 
 	// Constants
 	const SECTION_BASE_CLASSES = "section-py section-px container mx-auto";
@@ -24,19 +26,19 @@
 
 	const benefits = [
 		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
+			title: "Shape Market-Ready Products",
+			description: "Work directly on products that help startups achieve product-market fit and secure funding rounds.",
+			icon: IconTarget
 		},
 		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
+			title: "Learn from Industry Leaders",
+			description: "Gain insights from Sukrut's unique blend of design expertise and venture capital strategy thinking.",
 			icon: IconUsers
 		},
 		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
+			title: "Impact Early-Stage Innovation",
+			description: "Help first-time founders transform ideas into investor-ready products that demonstrate real market traction.",
+			icon: IconRocket
 		}
 	];
 
@@ -122,31 +124,28 @@
 
 	const employeeTestimonials = [
 		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
+			name: "David Chen",
+			position: "Senior Product Designer",
 			company: "Design Team",
 			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"What drew me to Joshi Studio was the unique blend of design thinking and business strategy. Every project feels meaningful because we're helping founders build products that actually matter. The culture here celebrates both creative excellence and strategic impact.",
+			image: "/generated/image-a-professional-headshot-of-an-asian-male.webp"
 		},
 		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
+			name: "Amara Williams",
+			position: "Product Strategy Lead",
+			company: "Strategy Team",
 			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"The growth opportunities here are incredible. I started as a junior strategist and now lead client relationships with pre-seed founders. Sukrut's mentorship and the team's investment in my development have been game-changing for my career.",
+			image: "/generated/image-a-professional-headshot-of-a-black-femal.webp"
+		},
+		{
+			name: "Carlos Rodriguez",
+			position: "Senior Frontend Engineer",
+			company: "Engineering Team",
+			quote:
+				"The work environment here strikes the perfect balance between high standards and collaboration. We build products that help startups secure funding and find product-market fit. There's nothing quite like seeing founders succeed because of the work we do together.",
+			image: "/generated/image-a-professional-headshot-of-a-hispanic-ma.webp"
 		}
 	];
 
@@ -155,35 +154,35 @@
 			step: 1,
 			title: "Apply",
 			description:
-				"Submit your application through our careers portal with your resume and portfolio."
+				"Submit your application with your resume and portfolio showcasing work that demonstrates strategic thinking and user empathy."
 		},
 		{
 			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
+			title: "Strategy Discussion",
+			description: "Meet with Sukrut and the team to discuss your approach to balancing design excellence with business validation."
 		},
 		{
 			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
+			title: "Join the Mission",
+			description: "Start helping first-time founders build investor-ready products that achieve real market traction."
 		}
 	];
 
 	const values = [
 		{
 			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
+			title: "Design Empathy",
+			description: "We combine deep user understanding with strategic business thinking to create products that truly matter."
 		},
 		{
 			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
+			title: "Founder-Focused",
+			description: "We're dedicated to helping first-time founders navigate the complex journey from idea to market-ready product."
 		},
 		{
 			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
+			title: "VC-Aligned Strategy",
+			description: "We understand what investors want and help startups build traction-ready products that secure funding."
 		}
 	];
 </script>
@@ -191,15 +190,14 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	generating
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Shape tomorrow's startups"
+	subtitle="Work at the intersection of design and strategy to help pre-seed startups turn early ideas into market-ready products. Join our team of strategists, designers, and product experts who collaborate with driven founders to build what matters."
+	imageSrc="/generated/image-a-creative-team-of-diverse-professionals.webp"
 />
 
 <!-- Why Join Us Section -->
-<section class={SECTION_BASE_CLASSES} generating>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+<section class={SECTION_BASE_CLASSES}>
+	<SectionHeader title="Why join us?" subtitle="Shape the future of startup success" />
 
 	<div class="mt-16 grid gap-4 md:grid-cols-3">
 		{#each benefits as benefit}
@@ -209,12 +207,12 @@
 </section>
 
 <!-- Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
-<Testimonials testimonials={employeeTestimonials} generating />
+<Testimonials testimonials={employeeTestimonials} />
 
 <!-- Application Process -->
-<section class={SECTION_BASE_CLASSES} generating>
+<section class={SECTION_BASE_CLASSES}>
 	<div class="mx-auto">
 		<h2 class="text-title1 mb-16">Our application process</h2>
 
@@ -232,7 +230,7 @@
 	</div>
 </section>
 <!-- Current Openings Section -->
-<section class={GRADIENT_BG_CLASSES} generating>
+<section class={GRADIENT_BG_CLASSES}>
 	<div class="section-px section-py container mx-auto grid w-full items-start lg:grid-cols-2">
 		<SectionHeader title="Current openings" subtitle="Find your perfect role" />
 

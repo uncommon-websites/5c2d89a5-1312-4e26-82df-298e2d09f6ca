@@ -7,6 +7,7 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import UseCases from "$lib/components/layout/UseCases.svelte";
 </script>
 
 <Hero
@@ -27,61 +28,124 @@
 
 <Summary
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="We transform early-stage startup ideas into investor-ready products by combining VC-aligned strategy with design empathy. Starting at $5K, we help first-time founders build products that demonstrate clear market traction before development begins."
 />
 
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Elyana Rodriguez",
+			position: "Founder & CEO",
+			company: "Reglow",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"Joshi Studio saved us 3 months of build time and $45K in development costs by validating our core assumptions before we wrote a single line of code. We raised our pre-seed round based on their prototype alone.",
+			image: "/generated/image-a-professional-female-founder-in-her-30s.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Tran",
+			position: "Co-founder",
+			company: "StitchAI",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"Instead of burning 6 months building features nobody wanted, we spent 3 weeks with Joshi Studio understanding what investors actually look for. The clarity was worth every penny of our $12K investment.",
+			image: "/generated/image-a-male-entrepreneur-in-his-40s-wearing-a.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Zara Okafor",
+			position: "Founder",
+			company: "FlowMetrics",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"Working with Sukrut eliminated the guesswork that kills most startups. We avoided costly pivots and launched with investor-ready traction metrics. ROI was 400% within our first funding round.",
+			image: "/generated/image-a-young-professional-woman-in-her-late-2.webp"
+		}
+	]}
+/>
+
+<UseCases
+	title="Use Cases"
+	subtitle="How we help first-time founders build investor-ready products"
+	useCases={[
+		{
+			title: "Validate your MVP before you build",
+			description: "Before writing code or hiring developers, test your riskiest assumptions with real users. Our validation process saves months of development time and prevents costly pivots by proving demand exists for your core value proposition.",
+			image: "/generated/image-a-group-of-first-time-startup-founders-g.webp",
+			link: {
+				href: "/use-cases/mvp-validation",
+				label: "Learn more"
+			}
+		},
+		{
+			title: "Build investor-ready traction metrics",
+			description: "Transform your startup idea into compelling evidence that VCs want to see. We help you create measurable proof of product-market fit through strategic user research, competitive positioning, and clear growth indicators.",
+			image: "/generated/image-in-a-sleek-modern-boardroom-a-group-of-e.webp",
+			link: {
+				href: "/use-cases/investor-readiness",
+				label: "Learn more"
+			}
+		},
+		{
+			title: "De-risk product strategy with user insights", 
+			description: "Stop building features nobody wants. Our user research process uncovers what your target market actually needs, helping you prioritize the right features that drive adoption and retention from day one.",
+			image: "/generated/image-a-product-strategist-sitting-in-a-relaxe.webp",
+			link: {
+				href: "/use-cases/product-strategy",
+				label: "Learn more"
+			}
 		}
 	]}
 />
 
 <Features
-	title="Features"
-	subtitle="Some features"
+	title="Why founders choose Joshi Studio"
+	subtitle="We combine design empathy with VC-aligned strategy to build products that demonstrate clear market traction"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "MVP validation that proves demand",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Test your riskiest assumptions fast and get user feedback before you write a single line of code."
 		},
 		{
-			title: "Data Analysis",
+			title: "VC-aligned product strategy",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Bridge the gap between what you want to build and what investors want to see—traction, clarity, and demand."
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Design that drives business results",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Every UX and UI decision is based on user needs and business goals, not just aesthetics."
+		},
+		{
+			title: "Market traction before development",
+			description:
+				"Validate your value proposition with real users and create compelling evidence of product-market fit."
+		},
+		{
+			title: "Milestone-based pricing for startups",
+			description:
+				"Start at $5K for MVP validation with flexible scope that grows with your funding stage."
+		},
+		{
+			title: "50+ funded portfolio companies",
+			description:
+				"Proven track record helping early-stage teams launch with clarity and secure investment faster."
 		}
 	]}
 />
 <AboutTeaser />
-<CallToAction />
+<CallToAction
+	title="Ready to build an investor-ready product?"
+	subtitle="Get started with Joshi Studio"
+	description="Stop wasting months building features users don't want. Let's validate your startup idea and create a product that demonstrates clear market traction before development begins."
+	imageSrc="/generated/image-a-cheerful-startup-founder-with-a-friend.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Start validation project",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn our process",
+			variant: "secondary"
+		}
+	]}
+/>
