@@ -47,6 +47,7 @@
 		title: string;
 		subtitle: string;
 		imageSrc?: string;
+		patternBackground?: string;
 		callsToAction?: Array<{
 			href: string;
 			label: string;
@@ -57,16 +58,30 @@
 		title,
 		subtitle,
 		imageSrc,
+		patternBackground,
 		callsToAction = [cta],
 		centered = false,
 		...rest
 	}: Props = $props();
 </script>
 
-<div class="bg-background" {...rest}>
+<div 
+	class={[
+		"bg-background relative",
+		patternBackground ? "overflow-hidden" : ""
+	]} 
+	{...rest}
+>
+	{#if patternBackground}
+		<div 
+			class="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat"
+			style="background-image: url({patternBackground})"
+		></div>
+		<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+	{/if}
 	<header
 		class={[
-			"section-px container mx-auto grid items-end gap-16 gap-y-9 py-12 pt-24 text-balance",
+			"section-px container mx-auto grid items-end gap-16 gap-y-9 py-12 pt-24 text-balance relative z-10",
 			centered ? "place-items-center text-center" : " xl:grid-cols-[1fr_auto]"
 		]}
 		data-enter-container
@@ -112,7 +127,7 @@
 		{/if}
 	</header>
 
-	{#if imageSrc}
+	{#if imageSrc && !patternBackground}
 		<div class="col-span-full aspect-video" data-enter>
 			<img
 				src={imageSrc}

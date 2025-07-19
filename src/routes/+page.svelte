@@ -13,8 +13,8 @@
 <Hero
 	title="Turn your startup idea into an investor-ready product"
 	subtitle="VC-aligned strategy meets design empathy to build products that demonstrate clear market traction from day one."
-	imageSrc="/generated/image-a-group-of-young-startup-founders-are-ga.webp"
-	centered={false}
+	centered={true}
+	patternBackground="/generated/image-a-serene-beach-scene-at-sunrise-with-sof.webp"
 />
 <LogoScroller 
 	label="Trusted by ambitious startups" 
