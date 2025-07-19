@@ -67,7 +67,7 @@
 
 <div 
 	class={[
-		"bg-background relative",
+		"bg-background relative min-h-[100vh] flex items-center",
 		patternBackground ? "overflow-hidden" : ""
 	]} 
 	{...rest}
@@ -81,7 +81,7 @@
 	{/if}
 	<header
 		class={[
-			"section-px container mx-auto grid items-end gap-16 gap-y-9 py-12 pt-24 text-balance relative z-10",
+			"section-px container mx-auto grid items-center gap-16 gap-y-9 py-12 text-balance relative z-10 w-full",
 			centered ? "place-items-center text-center" : " xl:grid-cols-[1fr_auto]"
 		]}
 		data-enter-container
