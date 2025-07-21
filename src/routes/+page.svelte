@@ -14,7 +14,7 @@
 	title="Turn your startup idea into an investor-ready product"
 	subtitle="VC-aligned strategy meets design empathy to build products that demonstrate clear market traction from day one."
 	centered={true}
-	patternBackground="/generated/image-a-serene-beach-scene-at-sunrise-with-sof.webp"
+	patternBackground="/uploaded/1753104355772-a1m5rhg.jpg"
 />
 <LogoScroller 
 	label="Trusted by ambitious startups" 
